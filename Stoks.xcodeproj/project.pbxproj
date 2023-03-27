@@ -13,6 +13,10 @@
 		595D4D2829D07141003B31AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595D4D2729D07141003B31AB /* Preview Assets.xcassets */; };
 		595D4D2A29D07141003B31AB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D4D2929D07141003B31AB /* Persistence.swift */; };
 		595D4D2D29D07141003B31AB /* Stoks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 595D4D2B29D07141003B31AB /* Stoks.xcdatamodeld */; };
+		595D4D3629D09A31003B31AB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 595D4D3529D09A31003B31AB /* FirebaseAnalytics */; };
+		595D4D3829D09A31003B31AB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 595D4D3729D09A31003B31AB /* FirebaseAuth */; };
+		595D4D3A29D09AC3003B31AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D4D3929D09AC3003B31AB /* AppDelegate.swift */; };
+		595D4D3C29D09C84003B31AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 595D4D3B29D09C84003B31AB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		595D4D2929D07141003B31AB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		595D4D2C29D07141003B31AB /* Stoks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stoks.xcdatamodel; sourceTree = "<group>"; };
 		595D4D2E29D07141003B31AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595D4D3929D09AC3003B31AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		595D4D3B29D09C84003B31AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595D4D3629D09A31003B31AB /* FirebaseAnalytics in Frameworks */,
+				595D4D3829D09A31003B31AB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 		595D4D1F29D07140003B31AB /* Stoks */ = {
 			isa = PBXGroup;
 			children = (
+				595D4D3B29D09C84003B31AB /* GoogleService-Info.plist */,
 				595D4D2029D07140003B31AB /* StoksApp.swift */,
 				595D4D2229D07140003B31AB /* ContentView.swift */,
 				595D4D2429D07141003B31AB /* Assets.xcassets */,
@@ -63,6 +72,7 @@
 				595D4D2E29D07141003B31AB /* Info.plist */,
 				595D4D2B29D07141003B31AB /* Stoks.xcdatamodeld */,
 				595D4D2629D07141003B31AB /* Preview Content */,
+				595D4D3929D09AC3003B31AB /* AppDelegate.swift */,
 			);
 			path = Stoks;
 			sourceTree = "<group>";
@@ -91,6 +101,10 @@
 			dependencies = (
 			);
 			name = Stoks;
+			packageProductDependencies = (
+				595D4D3529D09A31003B31AB /* FirebaseAnalytics */,
+				595D4D3729D09A31003B31AB /* FirebaseAuth */,
+			);
 			productName = Stoks;
 			productReference = 595D4D1D29D07140003B31AB /* Stoks.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 595D4D1429D07140003B31AB;
+			packageReferences = (
+				595D4D3429D09A31003B31AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 595D4D1E29D07140003B31AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +152,7 @@
 			files = (
 				595D4D2829D07141003B31AB /* Preview Assets.xcassets in Resources */,
 				595D4D2529D07141003B31AB /* Assets.xcassets in Resources */,
+				595D4D3C29D09C84003B31AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +166,7 @@
 				595D4D2A29D07141003B31AB /* Persistence.swift in Sources */,
 				595D4D2329D07140003B31AB /* ContentView.swift in Sources */,
 				595D4D2D29D07141003B31AB /* Stoks.xcdatamodeld in Sources */,
+				595D4D3A29D09AC3003B31AB /* AppDelegate.swift in Sources */,
 				595D4D2129D07140003B31AB /* StoksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +299,7 @@
 				DEVELOPMENT_TEAM = NU7BU33S3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stoks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +329,7 @@
 				DEVELOPMENT_TEAM = NU7BU33S3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stoks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -349,6 +370,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		595D4D3429D09A31003B31AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		595D4D3529D09A31003B31AB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 595D4D3429D09A31003B31AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		595D4D3729D09A31003B31AB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 595D4D3429D09A31003B31AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		595D4D2B29D07141003B31AB /* Stoks.xcdatamodeld */ = {

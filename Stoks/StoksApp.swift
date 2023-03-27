@@ -10,7 +10,9 @@ import SwiftUI
 @main
 struct StoksApp: App {
     let persistenceController = PersistenceController.shared
-
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
