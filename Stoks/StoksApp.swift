@@ -10,6 +10,9 @@ import SwiftUI
 @main
 struct StoksApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject var authViewModel = AuthViewModel()
+    @StateObject var authState = AuthState()
+    
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
@@ -17,6 +20,8 @@ struct StoksApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(authViewModel)
+                .environmentObject(authState)
         }
     }
 }
